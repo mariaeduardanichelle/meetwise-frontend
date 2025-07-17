@@ -28,7 +28,7 @@ const success = ref('')
 
 async function register() {
   try {
-    await axios.post('http://localhost:8000/api/register/', {
+    await axios.post('http://ac7456a93a3414e4e904dca0100b158d-515219963.us-east-1.elb.amazonaws.com/api/register/', {
       username: username.value,
       email: email.value,
       password: password.value,

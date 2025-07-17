@@ -23,7 +23,7 @@ const router = useRouter()
 
 async function login() {
   try {
-    const response = await axios.post('http://localhost:8000/api/token/', {
+    const response = await axios.post('http://ac7456a93a3414e4e904dca0100b158d-515219963.us-east-1.elb.amazonaws.com/api/token/', {
       username: username.value,
       password: password.value,
     })

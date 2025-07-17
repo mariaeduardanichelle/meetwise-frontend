@@ -46,7 +46,7 @@ const user_id = localStorage.getItem('user_id')
 
 async function fetchEvents() {
   try {
-    const response = await axios.get('http://localhost:8000/events/', {
+    const response = await axios.get('http://ac7456a93a3414e4e904dca0100b158d-515219963.us-east-1.elb.amazonaws.com/events/', {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -61,7 +61,7 @@ async function registerForEvent(eventId) {
   try {
     loading.value = true
     await axios.post(
-      'http://localhost:8000/register/',
+      'http://ac7456a93a3414e4e904dca0100b158d-515219963.us-east-1.elb.amazonaws.com/register/',
       {
         user_id: user_id,
         event_id: eventId,
